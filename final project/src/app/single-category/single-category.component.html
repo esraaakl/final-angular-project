@@ -1,0 +1,77 @@
+<div class="loading" *ngIf="!singleCatData" >
+loading...
+</div>
+<!-- <div  *ngIf="singleCatData && singleCatData.length==0"  >
+  no data found
+  </div> -->
+
+<div  *ngIf="singleCatData " class="container" style="border: 2px solid pink;">
+
+  <div class="row justify-content-between">
+
+    <div class="col-md-5">
+      <p>
+       
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Button with data-target
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <!-- <input  #v1 type="checkbox" name="vehicle1" value="Gate 4 - 1st Alexandria"(click)="clickimhcheckBox(v1)">
+          <label for="vehicle1">Gate 4 - 1st Alexandria</label><br>
+          <input   #v2 type="checkbox" name="vehicle2" value="San Stifano" (click)="clickimhcheckBox(v2)">
+          <label for="vehicle2">San Stifano</label><br>
+          <input  #v3 type="checkbox" name="vehicle3" value="Sedigabr" (click)="clickimhcheckBox(v3)">
+          <label for="vehicle3">Sedigabr</label><br><br> -->
+
+          <div *ngFor="let item of uniqe;let i = index;">
+            <input  id={{i}} type="checkbox" name="vehicle3" value={{item}} (click)="clickimhcheckBox($event)">
+            <label for="vehicle3">{{item}}</label><br><br>
+          </div>
+         
+          
+          
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-6">
+      <h1>{{singleCatData.name}}</h1>
+      <h3>{{singleCatData.id}}</h3>
+      <p>{{singleCatData.desc}}</p>
+      <ul>
+        <div *ngIf="filterdarr.length==0">
+          <li  *ngFor="let place of singleSelecetedPlaces" style="border: 2px solid red;" >
+            <h5 routerLink="/place/{{place.id}}">{{place.name}}</h5>
+            <p>{{place.location}}</p>
+            <button class="btn btn-danger" *ngIf="place.reservation=='true'">reservation</button>
+            <button class="btn btn-danger" *ngIf="place.reservation=='false'" > no-reservation</button>
+            
+          </li>
+          
+        </div>
+        
+<div *ngIf="filterdarr.length>0" >
+  <li  *ngFor="let place of filterdarr" style="border: 2px solid red;" >
+    <h5 routerLink="/place/{{place.id}}">{{place.name}}</h5>
+    <p>{{place.location}}</p>
+    <button class="btn btn-danger" *ngIf="place.reservation=='true'">reservation</button>
+    <button class="btn btn-danger" *ngIf="place.reservation=='false'" > no-reservation</button>
+  </li>
+</div>
+        
+
+
+      </ul>
+      <hr>
+      <h1>{{singleCatId}}</h1>
+    </div>
+  
+    
+  </div>
+ 
+
+</div>
+

@@ -1,0 +1,27 @@
+
+<div class="loading" *ngIf="!singlePlaceData" >
+  loading...
+  </div>
+<div *ngIf="singlePlaceData " >
+  <div class="container" style="border: 2px red solid ;"> 
+    <h1>
+      {{singlePlaceData.id}}
+    </h1>
+    <h1>
+      {{singlePlaceData.name}}
+    </h1>
+    
+    <h1>
+      {{singlePlaceData.location}}
+    </h1>
+    
+  <button class="btn btn-danger" *ngIf="singlePlaceData.reservation=='true'" routerLink="/reservation/{{singlePlaceData.id}}">reservation</button>
+  <h4  *ngIf="singlePlaceData.status=='open'">open</h4>
+  <h4  *ngIf="singlePlaceData.status!='open'" >close</h4>
+  </div>
+
+
+</div>
+
+
+

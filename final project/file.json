@@ -1,0 +1,403 @@
+{
+  "users": [{
+      "id": 1,
+      "fName": "hend",
+      "lName": "diab",
+      "email": "henddiab132@gmail.com",
+      "password": "1234",
+      "image": "",
+      "rate": 1,
+      "favourites": [],
+      "visa": 0
+    },
+    {
+      "id": 2,
+      "fName": "samaa",
+      "lName": "amin",
+      "email": "samaa@gmail.com",
+      "password": "12345",
+      "image": "",
+      "rate": 1,
+      "favourites": [],
+      "visa": 0
+    },
+    {
+      "id": 3,
+      "fName": "sara",
+      "lName": "elhabla",
+      "email": "sara@yahoo.com",
+      "password": "123456",
+      "image": "",
+      "rate": 1,
+      "favourites": [],
+      "visa": 0
+    },
+    {
+      "id": 4,
+      "fName": "esraa",
+      "lName": "akl",
+      "email": "esraa@yahoo.com",
+      "password": "123455",
+      "image": "",
+      "rate": 1,
+      "favourites": [],
+      "visa": 0
+    },
+    {
+      "id": 5,
+      "fName": "mohamed",
+      "lName": "adel",
+      "email": "madel@yahoo.com",
+      "password": "1234556",
+      "image": "",
+      "rate": 1,
+      "favourites": [],
+      "visa": 0
+    }
+  ],
+
+
+  "categories": [{
+      "id": 1,
+      "name": "escape room",
+      "desc": "Escape room alexandria is a real life entertainment game , where a group of 2-6 players are locked in a room and attempt to escape through solving various puzzles !",
+      "image": "",
+      "reservation":"true"
+      
+      
+    },
+    {
+      "id": 2,
+      "name": "play grounds",
+      "desc": "Alexandria playgrounds to meet the best runners and players in town. Are you ready",
+      "image": "",
+      "reservation":"true"
+      
+    
+    },
+    {
+      "id": 3,
+      "name": "swimming pools",
+      "desc": "Find and book deals on the best hotels with pools in Alexandria, Egypt! Explore guest reviews and book the perfect hotel with pools for your trip.",
+      "image": "",
+      "reservation":"true"
+     
+    },
+    {
+      "id": 4,
+      "name": "ice skatting",
+      "desc": "  Public skating, family sessions, ice events, bar/cafe offering hot drinks, Figure Skating School, private lessons",
+      "image": "",
+      "reservation":"true"
+     
+    },
+    {
+      "id": 5,
+      "name": "cinema",
+      "desc": "Watch the latest movies and see your own dream come true",
+      "image": "",
+      "reservation":"false"
+      
+    },
+    {
+      "id": 6,
+      "name": "shopping",
+      "desc": "Alex best shopping centers with different brands , large parking space, huge spinneys hyper market, Virgin megastores, children playground & very nice restaurants & coffee shops..",
+      "image": "",
+      "reservation":"false"
+   
+    },
+    {
+      "id": 7,
+      "name": "bowling",
+      "desc": "For all bowling lovers in alexandria.  ",
+      "image": "",
+      "reservation":"true"
+     
+    },
+    {
+      "id": 8,
+      "name": "bing",
+      "desc": "Get ready for some serious fun when you visit Alex best Table Tennis & Ping Pong Centers",
+      "image": "",
+      "reservation":"true"
+   
+    },
+    {
+      "id": 9,
+      "name": "billiards",
+      "desc": "Welcome to all pool billiard , where All players  can share experiences and communications . ",
+      "image": "",
+      "reservation":"true"
+   
+    },
+    {
+      "id": 10,
+      "name": "playstation",
+      "desc": "a gaming cafe where you can order food and drinks while enjoying your favourite games ",
+      "image": "",
+      "reservation":"true"
+    },
+    {
+      "id": 11,
+      "name": "Virtual reality",
+      "desc": "a simulating experience that can be completely different from the real world.",
+      "image": "",
+      "reservation":"true"
+    },
+    {
+      "id": 12,
+      "name": "trampoline",
+      "desc": "Fly through the air and bounce off the walls. BOUNCE trampoline parks for all ages. Book Online Now.",
+      "image": "",
+      "reservation":"false"
+    },
+    {
+      "id": 13,
+      "name": "park",
+      "desc": ". Mosdddt of the landscapes and their accompanying plants and animals in a national park are kept in their natural state..",
+      "image": "",
+      "reservation":"true"
+    }
+
+  ],
+
+
+
+  "places": [{
+      "id": 1,
+      "name": "El Salam Entertainment Center",
+      "catId": [7,8,9],
+      "location": "Mustafa Kamel ",
+      "address":"Mustafa Kamel WA Bolkli, Sidi Gaber, Alexandria Governorate",
+      "comments": [
+        {
+          "userId":3,
+          "comment":"Excellent place for toddlers. With Avery affordable price. Only lacks the air conditioning rendering it bad for parents."
+          },
+          {
+            "userId":4,
+            "comment":"The place is really wonderful and it has all the tools of entertainment but I would recommend to have a drink there"
+          },
+          {
+            "userId":5,
+            "comment":"Amazing and unique place suitable for kids and Adults."
+          }
+
+    ],
+      "rates": [{
+        "userId": 3,
+        "value": 4
+      },
+      {
+        "userId": 4,
+        "value": 3
+      },
+      {
+        "userId": 5,
+        "value": 5
+      }
+    ],
+      "avgrate": 0,
+      "image": "",
+      "status":"closed",
+      "reservation":"false",
+      "kid-friendly":"false"
+    },
+    {
+      "id": 2,
+      "name": "Africa Park",
+      "catId": [13],
+      "location": "Alexandria Desert ",
+      "address":"Alexandria Desert Rd, Gharb El Noubareya",
+      "comments": [
+        {
+        "userId":1,
+        "comment":"The place isn’t the best in condition but it’s fair enough."
+        },
+        {
+          "userId":4,
+          "comment":"Amazing and unique place suitable for kids and Adults."
+        }
+    ],
+      "rates": [
+        {
+        "userId": 1,
+        "value": 3
+      },
+      {
+        "userId": 4,
+        "value": 5
+      }
+    ],
+      "avgrate": 0,
+      "image": "",
+      "status":"open"
+    },
+    {
+      "id": 3,
+      "name": "Taverna Aquacity",
+      "catId": [3],
+      "location": "Kom Hafin ",
+      "address":"Kom Hafin, Abu El Matamir",
+      "comments": [
+        {
+          "userId":1,
+          "comment":"The place isn’t the best in condition but it’s fair enough."
+          },
+          {
+            "userId":4,
+            "comment":"Amazing and unique place suitable for kids and Adults."
+          }
+      ],
+      "rates": [
+        {
+          "userId": 1,
+          "value": 3
+        },
+        {
+          "userId": 4,
+          "value": 5
+        }
+      ],
+      "avgrate": 0,
+      "image": "",
+      "status":"closed",
+      "reservation":"true",
+      "kid-friendly":"true"
+    },
+    {
+      "id": 4,
+      "name": "Carrefour City Center",
+      "catId": [5,6,7,8,9,11,12],
+      "location":"Gate 4 - 1st Alexandria",
+      "address": "Gate 4 - 1st Alexandria Cairo Desert Road - Alexandria, Alexandria Governorate 11432",
+      
+      "comments": [
+        {
+          "userId":2,
+          "comment":"I love this place very much because I can buy what I need easily there. Everything, clothes,food, shoes... etc And I can eat from different restaurants and sit on a Cafe. There is a wonderful cinema and a funfair for kids."
+          },
+          {
+            "userId":1,
+            "comment":"really good time for shopping and have a good time there.  alot of places to visit coffee is good alot of brands and market is amazing too . really enjoyable  time and place I recommended for all people"
+          }
+      ],
+      "rates": [{
+        "userId": 1,
+        "value": 3
+      },
+      {
+        "userId": 4,
+        "value": 5
+      }],
+      "avgrate": 0,
+      "image": "",
+      "status":"open",
+      "reservation":"false",
+      "kid-friendly":"true"
+    },
+    {
+      "id": 5,
+      "name": "San Stefano Grand Plaza",
+      "catId": [5,6,7,8,9,11],
+      "location":"San Stifano",
+      "address": "El-Gaish Rd, San Stifano, Qism El-Raml, Alexandria Governorate",
+      "comments": [
+        {
+          "userId":2,
+          "comment":"It is one of the places where you can enjoy drinking your cup of coffee ☕ without being bothered by anyone.. It has many shops and restaurants for shopping. I personally like going there each now and then."
+          },
+          {
+            "userId":3,
+            "comment":"I like this place but the only problem is the sitting in the food court once you buy the food you can’t sit and enjoy your food it needed to be bigger than that more seats and tables the cinema up there is cool it’s clean and nice a bit high “price-wise” but it’s fine for me"
+          }
+      ],
+      "rates": [{
+        "userId": 2,
+        "value": 3
+      },
+      {
+        "userId": 1,
+        "value": 5
+      }],
+      "avgrate": 0,
+      "image": "",
+      "status":"open",
+      "reservation":"false",
+      "kid-friendly":"true"
+    },
+    {
+      "id": 7,
+      "name": "Egypt Skate Club",
+      "catId": [4],
+      "location":"Sedigabr",
+      "address": "El-Gaish Rd, San Stifano, Qism El-Raml, Alexandria Governorate",
+      "comments": [
+        {
+          "userId":2,
+          "comment":"Perfect for beginners, the staff are good at what they do, fairly priced. I recommend 2 hours, and the ski pack for the adults,whole package for children."
+          }
+          
+      ],
+      "rates": [{
+        "userId": 2,
+        "value": 3
+      }
+      ],
+      "avgrate": 0,
+      "image": "",
+      "status":"open",
+      "reservation":"true",
+      "kid-friendly":"false"
+    },
+    {
+      "id": 8,
+      "name": "Egypt Skate Club",
+      "catId": [4],
+      "location":"Sedigabr",
+      "address": "El-Gaish Rd, San Stifano, Qism El-Raml, Alexandria Governorate",
+      "comments": [
+        {
+          "userId":2,
+          "comment":"Perfect for beginners, the staff are good at what they do, fairly priced. I recommend 2 hours, and the ski pack for the adults,whole package for children."
+          }
+          
+      ],
+      "rates": [{
+        "userId": 2,
+        "value": 3
+      }
+      ],
+      "avgrate": 0,
+      "image": "",
+      "status":"open",
+      "reservation":"true",
+      "kid-friendly":"false"
+    },
+    {
+      "id": 9,
+      "name": "Egypt Skate Club",
+      "catId": [4],
+      "location":"San Stifano",
+      "address": "El-Gaish Rd, San Stifano, Qism El-Raml, Alexandria Governorate",
+      "comments": [
+        {
+          "userId":2,
+          "comment":"Perfect for beginners, the staff are good at what they do, fairly priced. I recommend 2 hours, and the ski pack for the adults,whole package for children."
+          }
+          
+      ],
+      "rates": [{
+        "userId": 2,
+        "value": 3
+      }
+      ],
+      "avgrate": 0,
+      "image": "",
+      "status":"open",
+      "reservation":"true",
+      "kid-friendly":"false"
+    }
+  ]
+}

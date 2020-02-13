@@ -1,0 +1,8 @@
+<div class="container" style="border: 1px solid red ;text-align: center;">
+  <input type="text" #name>
+  <input type="email" #email>
+<input type="password" #password>
+
+<button class="btn btn-primary"(click)="addUser(name,email,password)" > Signup</button>
+<button class="btn btn-danger" routerLink="/login"> login</button>
+</div>
