@@ -18,6 +18,7 @@ import { RatesComponent } from './rates/rates.component';
 import { NOTFOUNDComponent } from './notfound/notfound.component';
 import { PlacesComponent } from './places/places.component';
 import { WeekendComponent } from './weekend/weekend.component';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { WeekendComponent } from './weekend/weekend.component';
     RatesComponent,
     NOTFOUNDComponent,
     PlacesComponent,
-    WeekendComponent
+    WeekendComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
