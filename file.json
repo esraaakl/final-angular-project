@@ -111,26 +111,15 @@
       "id": 10
     },
     {
-      "name": "esra",
-      "email": "esraa@gmail.com",
-      "password": "123aA@",
+      "name": "esraa",
+      "email": "esraa@gmaisssl.com",
+      "password": "1aA@@@",
       "image": "",
       "rate": 1,
       "favourites": [],
       "history": [],
       "visa": 0,
       "id": 11
-    },
-    {
-      "name": "aaaaa",
-      "email": "aaaaaaaa@gmail.com",
-      "password": "1aA@@",
-      "image": "",
-      "rate": 1,
-      "favourites": [],
-      "history": [],
-      "visa": 0,
-      "id": 12
     }
   ],
   "categories": [

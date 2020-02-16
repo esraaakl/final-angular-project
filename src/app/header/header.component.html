@@ -16,6 +16,12 @@
         <a class="nav-link" routerLink="/Weekend">Weekend</a>
       </li>
 
+      <li class="nav-item">
+        <ng-template #loggedOut>
+          <a class="nav-link" routerLink="/register">SignUp</a>
+        </ng-template>
+      </li>
+
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
@@ -47,20 +53,14 @@
       </li>
 
 
-      <!-- || (loggenfromlocalstorage && loggenfromlocalstorage.length!=0)" -->
 
-      <li *ngIf="headerLoggedin == true || loggenfromlocalstorage==true ; else  loggedOut">
+
+      <li *ngIf="headerLoggedin == true || loggenfromlocalstorage==true ; else loggedOut">
         <button class="btn btn-danger">profile</button>
         <button class="btn btn-danger" (click)="loggingOut()">logout</button>
       </li>
 
-      <li class="nav-item">
 
-        <ng-template #loggedOut>
-          <a class="nav-link" routerLink="/register">SignUp</a>
-        </ng-template>
-
-      </li>
 
     </ul>
   </div>
