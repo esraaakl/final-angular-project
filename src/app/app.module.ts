@@ -19,6 +19,8 @@ import { NOTFOUNDComponent } from './notfound/notfound.component';
 import { PlacesComponent } from './places/places.component';
 import { WeekendComponent } from './weekend/weekend.component';
 import { FilterPipe } from './filter.pipe';
+import { ReactiveFormsModule } from '@angular/forms';///////sign i
+
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { FilterPipe } from './filter.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule ////sign in
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

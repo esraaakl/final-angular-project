@@ -2,10 +2,9 @@
   "users": [
     {
       "id": 1,
-      "fName": "hend",
-      "lName": "diab",
+      "name": "samaaaaaa",
       "email": "henddiab132@gmail.com",
-      "password": "1234",
+      "password": "Aa!1234567",
       "image": "",
       "rate": 1,
       "favourites": [],
@@ -14,8 +13,7 @@
     },
     {
       "id": 2,
-      "fName": "samaa",
-      "lName": "amin",
+      "name": "esraa akl",
       "email": "samaa@gmail.com",
       "password": "12345",
       "image": "",
@@ -26,8 +24,7 @@
     },
     {
       "id": 3,
-      "fName": "sara",
-      "lName": "shreeeeeeeeeeif",
+      "name": "sarah sherif",
       "email": "sara@yahoo.com",
       "password": "123456",
       "image": "",
@@ -38,8 +35,7 @@
     },
     {
       "id": 4,
-      "fName": "esraa",
-      "lName": "akl",
+      "name": "hend",
       "email": "esraa@yahoo.com",
       "password": "123455",
       "image": "",
@@ -50,8 +46,7 @@
     },
     {
       "id": 5,
-      "fName": "mohamed",
-      "lName": "adel",
+      "name": "mohamed",
       "email": "madel@yahoo.com",
       "password": "1234556",
       "image": "",
@@ -59,6 +54,83 @@
       "favourites": [],
       "history": [],
       "visa": 0
+    },
+    {
+      "name": "esraaaaa",
+      "email": "shefffaa2testf@gmail.com",
+      "password": "aA!12345",
+      "image": "",
+      "rate": 1,
+      "favourites": [],
+      "history": [],
+      "visa": 0,
+      "id": 6
+    },
+    {
+      "name": "hagaaaaaaar",
+      "email": "shefaa2testf@gmail.com",
+      "password": "aA!123456",
+      "image": "",
+      "rate": 1,
+      "favourites": [],
+      "history": [],
+      "visa": 0,
+      "id": 7
+    },
+    {
+      "name": "hend",
+      "email": "samaaamin@yahoo.com",
+      "password": "aA!123456",
+      "image": "",
+      "rate": 1,
+      "favourites": [],
+      "history": [],
+      "visa": 0,
+      "id": 8
+    },
+    {
+      "name": "samaaaaa",
+      "email": "dfghfghj@yahoo.com",
+      "password": "aA!123456",
+      "image": "",
+      "rate": 1,
+      "favourites": [],
+      "history": [],
+      "visa": 0,
+      "id": 9
+    },
+    {
+      "name": "kk,mnbfvd",
+      "email": "shefaa254sfdgfhkllf@gmail.com",
+      "password": "aA!123456",
+      "image": "",
+      "rate": 1,
+      "favourites": [],
+      "history": [],
+      "visa": 0,
+      "id": 10
+    },
+    {
+      "name": "esra",
+      "email": "esraa@gmail.com",
+      "password": "123aA@",
+      "image": "",
+      "rate": 1,
+      "favourites": [],
+      "history": [],
+      "visa": 0,
+      "id": 11
+    },
+    {
+      "name": "aaaaa",
+      "email": "aaaaaaaa@gmail.com",
+      "password": "1aA@@",
+      "image": "",
+      "rate": 1,
+      "favourites": [],
+      "history": [],
+      "visa": 0,
+      "id": 12
     }
   ],
   "categories": [
@@ -196,7 +268,7 @@
       ],
       "avgrate": 5,
       "main-image": "",
-      "imgs": "",
+      "imgs": [],
       "status": "closed",
       "reservation": "false",
       "kid-friendly": "false",

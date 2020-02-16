@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { PlacesService } from '../places.service';
 import {HttpServiceService } from '../http-service.service'
 
@@ -14,39 +14,42 @@ export class PlacesComponent implements OnInit {
   // ........///
   singlePlaceId;
   singlePlaceData; //obj
-  constructor(private route: ActivatedRoute,private placeService :PlacesService,private httpService:HttpServiceService) {
+  // ........//
+  placeLoggedin;
+  constructor(private route: ActivatedRoute,private placeService :PlacesService,private httpService:HttpServiceService, private router :Router) {
 
     this.route.params.subscribe((param:Params)=>{
       this.singlePlaceId=param["id"];
 
-      // this.httpService.gettingPlaces().subscribe(
-      //   data=>
-      //   { this.places=data;
-
-      //     this.singlePlaceData=this.getSingleSpesifcPlace(this.singlePlaceId);
-      //     console.log(this.singlePlaceData)
-
-      //   })
 
       this.httpService.gettingPlaces().subscribe(
 
         data=>
         {
           this.places=data;
-          console.log(this.places)
             this.singlePlaceData= this.getSingleSpesifcPlace(this.singlePlaceId);
-            console.log("ssssssss")
-            console.log(this.singlePlaceData)
+          
         }
       ) 
     
     })
+    this.placeLoggedin=this.httpService.getData("loggedin");
    }
 
   ngOnInit() {
 
   }
+  navigateToReservation()
+  {
+    if(this.placeLoggedin && this.placeLoggedin.length!=0)
+    {
+        this.router.navigate(["/reservation",this.singlePlaceData.id])
+    }
+    else{
+      this.router.navigate(["/register"])
+    }
 
+  }
 
   
   getSingleSpesifcPlace(id)

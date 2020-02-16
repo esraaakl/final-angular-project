@@ -15,7 +15,13 @@
       {{singlePlaceData.location}}
     </h1>
     
-  <button class="btn btn-danger" *ngIf="singlePlaceData.reservation=='true'" routerLink="/reservation/{{singlePlaceData.id}}">reservation</button>
+    <div>
+
+      <!-- *ngIf="placeLoggedin && placeLoggedin.length!=0" -->
+      <!-- routerLink="/reservation/{{singlePlaceData.id}}" -->
+      <button class="btn btn-danger" *ngIf="singlePlaceData.reservation=='true'" (click)="navigateToReservation()">reservation</button>
+    </div>
+  
   <h4  *ngIf="singlePlaceData.status=='open'">open</h4>
   <h4  *ngIf="singlePlaceData.status!='open'" >close</h4>
   </div>

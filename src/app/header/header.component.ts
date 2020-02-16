@@ -14,6 +14,8 @@ export class HeaderComponent implements OnInit {
   regesterationCats=[];
   wanteddata;
   places;
+  headerLoggedin;
+  loggenfromlocalstorage;
   constructor( private placeService :PlacesService,private httpService:HttpServiceService) {
 
     this.httpService.gettingData().subscribe(
@@ -40,22 +42,36 @@ export class HeaderComponent implements OnInit {
     this.places=data;
     // console.log(this.places)
   })
+
+  this.loggenfromlocalstorage=this.httpService.getData("loggedin")
+  console.log("heeeeeeello")
+  console.log(this.loggenfromlocalstorage)
+  
    }
 
   ngOnInit() {
     // this.cats=this.placeService.obj.categories;
-   
+    this.httpService.headerProfile.subscribe(data=>{ ///object behavior
+      this.headerLoggedin=data;
+    })
+
+  }
+
+  loggingOut(){
+    this.headerLoggedin=false;
+    localStorage.clear();
+    this.httpService.setData("loggedin",false);
+    this.loggenfromlocalstorage=this.httpService.getData("loggedin")
+
   }
   lowerPlaceSearch;
   lowerPlaceData;
-
-
+  
   handlingSearch(inputVal)
   {
   inputVal.value="";
   this.wanteddata=[];
   }  
-
   lookingFor(event)
 {
   this.wanteddata=[];
@@ -71,11 +87,8 @@ for (let i=0;i<this.places.length;i++)
     this.wanteddata.push(this.places[i])
   }
 }
-
 console.log(this.wanteddata)
 }
-   
 }
- 
 
 

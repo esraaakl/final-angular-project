@@ -54,9 +54,7 @@ export class SingleCategoryComponent implements OnInit {
       this.httpService.gettingData().subscribe(
         data => {
           this.cats = data;
-          console.log(this.cats)
           this.singleCatData = this.loopingforSpecifcCategory(this.singleCatId);
-          console.log(this.singleCatData);
 
         }
       )
