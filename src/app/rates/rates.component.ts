@@ -70,8 +70,8 @@ export class RatesComponent implements OnInit, ControlValueAccessor {
       let headers = { "Content-Type": "application/json" }
       let user;
       user = this.service.getData("user")
-      console.log("hhhhhhhhhhhhhhhh")
-      console.log(user)
+      // console.log("hhhhhhhhhhhhhhhh")
+      // console.log(user)
       let body =
       {
         "value": this.value,
@@ -79,7 +79,7 @@ export class RatesComponent implements OnInit, ControlValueAccessor {
         "userId": user.id
       }
       this.service.postRate(body, headers).subscribe(data => {
-        console.log(data);
+        // console.log(data);
       })
     }
     this.flag = false;

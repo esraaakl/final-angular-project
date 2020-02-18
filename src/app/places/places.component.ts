@@ -62,11 +62,11 @@ export class PlacesComponent implements OnInit {
   gettingSpesificOfFavs() {
     //  awl ma render el page bayshof hawa mawgod wala la?
     for (let fav of this.favs) {
-      console.log("na gawaaaaa el for")
+      // console.log("na gawaaaaa el for")
       if (fav.placeId == this.singlePlaceId && fav.userId == this.user.id) {
         this.checkFav = true;
         this.spesifcFavId = fav.id;
-        console.log("na gawaaaaa el if")
+        // console.log("na gawaaaaa el if")
         // lw mawgod hasglha fi el local storge lw msh mwgod 5alas
         this.httpService.setData("favid", this.spesifcFavId);
         break;
@@ -121,10 +121,10 @@ export class PlacesComponent implements OnInit {
     this.placeLoggedin = this.httpService.getData("loggedin");
     if (this.placeLoggedin == true) {
       this.checkFav = false;
-      console.log("22222222222222222")
+      // console.log("22222222222222222")
       this.spesifcFavId = this.httpService.getData("favid")
       this.httpService.deleteFav(this.spesifcFavId).subscribe(data => {
-        console.log("deleted")
+        // console.log("deleted")
       })
 
     }
@@ -148,7 +148,7 @@ export class PlacesComponent implements OnInit {
       }
       this.httpService.postFav(body, headers).subscribe(
         data => {
-          console.log(data)
+          // console.log(data)
           this.checkFav = true;
           // this.gettingSpesificOfFavs()
           this.httpService.getFav().subscribe(data => {
@@ -157,7 +157,7 @@ export class PlacesComponent implements OnInit {
           })
 
 
-          console.log("1111111111111111111111111")
+          // console.log("1111111111111111111111111")
 
         }
       )

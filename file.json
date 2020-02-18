@@ -71,6 +71,17 @@
       "history": [],
       "visa": 0,
       "id": 7
+    },
+    {
+      "name": "samaa",
+      "email": "samaa@dsfgh.com",
+      "password": "123aA!",
+      "image": "",
+      "rate": 1,
+      "favourites": [],
+      "history": [],
+      "visa": 0,
+      "id": 8
     }
   ],
   "categories": [
@@ -1339,9 +1350,18 @@
       "id": 4
     },
     {
-      "placeId": "3",
-      "userId": 6,
+      "placeId": "7",
+      "userId": 2,
       "id": 5
+    },
+    {
+      "placeId": "1",
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "placeId": "7",
+      "id": 7
     }
   ],
   "history": []

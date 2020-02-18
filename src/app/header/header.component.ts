@@ -22,21 +22,21 @@ export class HeaderComponent implements OnInit {
     this.httpService.gettingData().subscribe(
       data => {
         this.cats = data;
-        console.log("heeeeeeeeeeeere")
-        console.log(this.cats)
+        // console.log("heeeeeeeeeeeere")
+        // console.log(this.cats)
 
         for (let regstCat of this.cats) {
-          console.log("inside for")
+          // console.log("inside for")
           if (regstCat.reservation == "true") {
             this.regesterationCats.push(regstCat);
-            console.log("inside if")
+            // console.log("inside if")
           }
         }
 
       }
     )
 
-    console.log(this.cats)
+    // console.log(this.cats)
 
     this.httpService.gettingPlaces().subscribe(data => {
       this.places = data;
@@ -44,8 +44,8 @@ export class HeaderComponent implements OnInit {
     })
 
     this.loggenfromlocalstorage = this.httpService.getData("loggedin")
-    console.log("heeeeeeello")
-    console.log(this.loggenfromlocalstorage)
+    // console.log("heeeeeeello")
+    // console.log(this.loggenfromlocalstorage)
 
   }
 
@@ -85,7 +85,7 @@ export class HeaderComponent implements OnInit {
         this.wanteddata.push(this.places[i])
       }
     }
-    console.log(this.wanteddata)
+    // console.log(this.wanteddata)
   }
 }
 
